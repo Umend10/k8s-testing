@@ -5,7 +5,7 @@ metadata:
   labels:
     app: umend-new1
   name: umend-new1
-  namespace: umend-k8s
+  namespace: umend-app
 spec:
   replicas: 1
   selector:
