@@ -5,7 +5,7 @@ metadata:
   labels:
     app: umendlb
   name: umendlb
-  namespace: ashu-final-app
+  namespace: umend-app
 spec:
   ports:
   - name: 80-80
