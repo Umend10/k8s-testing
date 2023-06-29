@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: umend-new1
+  name: umend-new1
+  namespace: umend-k8s
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: umend-new1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: umend-new1
+    spec:
+      containers:
+      - image: umend/umend:sec34
+        name: umend-new1
+        ports:
+        - containerPort: 80
+        resources: {}
+status: {}
